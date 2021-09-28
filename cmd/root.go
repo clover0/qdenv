@@ -16,6 +16,7 @@ var rootCmd = &cobra.Command{
 func init() {
 	buildInitCmd()
 	buildEnterCmd()
+	buildHaltCmd()
 }
 
 func Execute() {
