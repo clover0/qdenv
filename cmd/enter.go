@@ -10,8 +10,9 @@ func buildEnterCmd() {
 	var cmdEnter = &cobra.Command{
 		Use:   "enter",
 		Short: "Enter environment",
-		Long:  ``,
-		Args:  cobra.MinimumNArgs(0),
+		Long: `Enter environment. 
+If not started environment(docker container), start container before enter environment`,
+		Args: cobra.MinimumNArgs(0),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return runEnter()
 		},

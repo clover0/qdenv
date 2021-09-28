@@ -26,8 +26,8 @@ func buildInitCmd() {
 	var cmdInit = &cobra.Command{
 		Use:   "init [image-name:tag-name]",
 		Short: "Init environment",
-		Long: `Initialize environment by target.
-				e.g) init python:3.9`,
+		Long: `Initialize environment by argument.
+e.g) init python:3.9`,
 		Args: cobra.MinimumNArgs(0),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			a := NewInitArgs(args)
