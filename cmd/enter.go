@@ -6,7 +6,7 @@ import (
 	"qdenv/util"
 )
 
-func buildEnterCmd() {
+func buildEnterCmd(rootCmd *cobra.Command) {
 	var cmdEnter = &cobra.Command{
 		Use:   "enter",
 		Short: "Enter environment",

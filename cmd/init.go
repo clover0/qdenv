@@ -22,7 +22,7 @@ func NewInitArgs(args []string) initArgs {
 	return initArgs{raw: args, ImageName: intn[0], TagName: intn[1]}
 }
 
-func buildInitCmd() {
+func buildInitCmd(rootCmd *cobra.Command) {
 	var cmdInit = &cobra.Command{
 		Use:   "init [image-name:tag-name]",
 		Short: "Init environment",
