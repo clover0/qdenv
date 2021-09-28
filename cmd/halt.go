@@ -6,7 +6,7 @@ import (
 	"qdenv/util"
 )
 
-func buildHaltCmd() {
+func buildHaltCmd(rootCmd *cobra.Command) {
 	var cmdEnter = &cobra.Command{
 		Use:   "halt",
 		Short: "Halt environment",
