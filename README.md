@@ -9,5 +9,5 @@ Qdenv is a tool to quickly create a programming environment.
 
 <!-- refs -->
 [go-report-card]: https://goreportcard.com/report/github.com/clover0/qdenv
-[go-report-card-badge]: https://goreportcard.com/badge/github.com/clover0/qdenv
-[license-badge]: https://img.shields.io/github/license/clover0/qdenv.svg
+[go-report-card-badge]: https://goreportcard.com/badge/github.com/clover0/qdenv?style=flat-square&logo=appveyor
+[license-badge]: https://img.shields.io/github/license/clover0/qdenv.svg?style=flat-square&logo=appveyor
