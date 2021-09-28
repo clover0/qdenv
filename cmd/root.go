@@ -9,13 +9,14 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "qdenv",
-	Short: "qdenv is a tool for building programming environment quickly",
+	Short: "Qdenv is a tool to quickly create a programming environment",
 	Long:  ``,
 }
 
 func init() {
 	buildInitCmd()
 	buildEnterCmd()
+	buildHaltCmd()
 }
 
 func Execute() {
