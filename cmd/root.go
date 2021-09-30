@@ -26,6 +26,7 @@ func buildCommand() *cobra.Command {
 	buildInitCmd(rootCmd)
 	buildEnterCmd(rootCmd)
 	buildHaltCmd(rootCmd)
+	buildSearchCmd(rootCmd)
 
 	return rootCmd
 }
