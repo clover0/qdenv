@@ -26,5 +26,5 @@ func runEnter() error {
 		return err
 	}
 
-	return util.Execw("docker-compose", []string{"exec", "qdenv", "bash"})
+	return util.Execw("docker-compose", []string{"exec", "qdenv", "sh", "-c", "bash || sh"})
 }
