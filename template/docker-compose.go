@@ -6,6 +6,7 @@ services:
   qdenv:
     build: .
     working_dir: /var/code
+    tty: true
     volumes:
       - .:/var/code
 `
