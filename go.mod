@@ -1,4 +1,4 @@
-module qdenv
+module github.com/clover0/qdenv
 
 go 1.17
 
