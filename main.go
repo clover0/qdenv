@@ -1,7 +1,7 @@
 package main
 
 import (
-	"qdenv/cmd"
+	"github.com/clover0/qdenv/cmd"
 )
 
 func main() {

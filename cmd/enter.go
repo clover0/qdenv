@@ -3,7 +3,7 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"qdenv/util"
+	"github.com/clover0/qdenv/util"
 )
 
 func buildEnterCmd(rootCmd *cobra.Command) {

@@ -7,8 +7,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"qdenv/template"
-	"qdenv/util"
+	"github.com/clover0/qdenv/template"
+	"github.com/clover0/qdenv/util"
 )
 
 type initArgs struct {
