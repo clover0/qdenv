@@ -10,17 +10,26 @@ Qdenv is a tool to quickly create a programming environment.
 # Quickstart
 
 ## Install
+Before
+- Install Docker(for Mac) if you have not installed.
+- Install docker-compose if you have not installed.
+
 ```
-$ go get github.com/clover0/qdenv
+brew tap clover0/qdenv
+brew install qdenv
 ```
 
-...Working now for brew method.
+or
+
+```
+go get github.com/clover0/qdenv
+```
 
 ## Examples
 ### Get Python environment quickly!
 Search available python3.7 images and tags.
 ```
-$ qdenv search python 3.7
+qdenv search python 3.7
 
 NAME    TAGS
 python    3.7.12-slim-buster 3.7.12-slim-bullseye 3.7.12-slim 3.7.12-buster 3.7.12-bullseye ...
@@ -30,7 +39,7 @@ pypy    3.7-slim-buster 3.7-slim-bullseye 3.7-slim 3.7-buster 3.7-bullseye 3.7-7
 
 Init environment. (Choiced python 3.7.12-slim-bullseye)
 ```
-$ qdenv init python:3.7.12-slim-bullseye
+qdenv init python:3.7.12-slim-bullseye
 
 Building qdenv
 [+] Building 
@@ -39,7 +48,7 @@ Building qdenv
 
 Enter environment.
 ```
-$ qdenv enter
+qdenv enter
 
 root:/var/code$ python --version
 Python 3.7.12
@@ -49,7 +58,7 @@ Coding on your machine but code is executed in qdenv environment(docker containe
 
 ### Search Ruby
 ```
-$ qdenv search ruby
+qdenv search ruby
 
 NAME    TAGS
 ruby    latest slim-buster slim-bullseye slim buster bullseye 3.0.2-slim-buster 3.0.2-slim-bullseye ...
